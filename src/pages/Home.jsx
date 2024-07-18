@@ -1,8 +1,8 @@
 import { useUserInfos } from "../context/GlobalContext"
 function Home() {
-  const userInfos = useUserInfos();
+  const { userName } = useUserInfos();
   return (
-    <div>Welcome {userInfos.name}</div>
+    <div>Welcome {userName}</div>
   )
 }
 
